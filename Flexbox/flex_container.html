@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box{
+            height: 50px;
+            width: 70px;
+            border: 3px solid;
+            margin: 2px;
+            text-align: center;
+        }
+        #heading{
+            text-align: center;
+        }
+        #container{
+            height: 600px;
+            width: 300px;/*container width is 400 but box with total is 200*5 = 1000 so they should come out of box but they shrink */
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid;
+            background-color: lightslategrey;
+            display: flex;  
+            
+            /*
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-direction: column;
+
+
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            
+            align-items: center;
+            align-items: baseline;
+            align-items: end;*/
+            
+            flex-wrap: wrap;
+            align-content: baseline; 
+
+
+        }
+        #box1{background-color: lightsalmon;}
+        #box2{background-color: rgb(48, 131, 142);}
+        #box3{background-color: rgb(193, 81, 159);}
+        #box4{background-color: rgb(234, 77, 15);}
+        #box5{background-color: rgb(35, 169, 30);}
+
+    </style>
+</head>
+<body>
+    <!-- 1.Flexbox is a one dimensional layout method of arranging items in rows or columns
+         2.itmes flex(expand) to fill additional space or shrink to fit into smaller spaces
+         3.it has 2 things a.container b. items
+         4. Main axis= left ->right
+         5. Cross axis= top -> bottom
+         6. direction
+                Row= L -> R
+                Row reverse= R -> L
+                Column = T->B
+                column reverse= B->T  -->
+    <h1 id="heading">flex container</h1>            
+    <div id="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+        <div id="box5" class="box">box5</div>
+        <div id="box5" class="box">box6</div>
+        <div id="box5" class="box">box7</div>
+        <div id="box5" class="box">box8</div>
+        <div id="box5" class="box">box9</div>
+    </div>
+                    
+
+
+        
+</body> 
+</html>

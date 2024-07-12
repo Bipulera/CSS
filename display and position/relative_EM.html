@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* EM - Parent 
+           REM - Root (body tag)*/
+        *{
+            font-size: 60px;
+        }   
+        #div1{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            font-size: 30px;
+        }
+        #div2{
+            height: 60%;
+            width: 70%;
+            background-color: rgb(180, 46, 46);
+            font-size: 1.5em;/* em means 1.5 times of parent here div1 parent of div2*/
+        }
+        #div3{
+            background-color: blueviolet;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <p>para</p>
+    <div id="div1">first
+        <div id="div2">second
+            <div id="div3">third</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{margin: 0; padding: 0;}
+        .box{
+            height: 50px;
+            width: 70px;
+            border: 3px solid;
+            margin: 2px;
+            text-align: center;
+        }
+        #heading{
+            text-align: center;
+        }
+        #container{
+            height: 600px;
+            width: 800px;/*container width is 400 but box with total is 200*5 = 1000 so they should come out of box but they shrink */
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid;
+            background-color: lightslategrey;
+
+            display: grid;
+            grid-template-columns: 80px 100px;
+            grid-template-rows: 50px 100px;
+
+
+
+        }
+        #box1{background-color: lightsalmon;
+             grid-column: 1/2;
+             grid-row: 1/2
+        }
+        #box3{background-color: rgb(48, 131, 142);
+            grid-column: 1/2;
+            grid-row: 2/2
+        }
+        #box2{background-color: rgb(193, 81, 159);
+            grid-column: 2/2;
+            grid-row: 1/2
+        }
+        #box4{background-color: rgb(234, 77, 15);
+            grid-column: 2/2;
+            grid-row: 2/2
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- grid is a multi dimensitional layout flexbox is 1d
+     -->
+     <h1 id="heading">flex container</h1>            
+     <div id="container">
+         <div id="box1" class="box">box1</div>
+         <div id="box2" class="box">box2</div>
+         <div id="box3" class="box">box3</div>
+         <div id="box4" class="box">box4</div>
+     </div>
+</body>
+</html>

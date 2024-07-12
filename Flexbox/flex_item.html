@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{margin: 0; padding: 0;}
+        .box{
+            height: 50px;
+            width: 70px;
+            border: 3px solid;
+            margin: 2px;
+            text-align: center;
+        }
+        #heading{
+            text-align: center;
+        }
+        #container{
+            height: 600px;
+            width: 800px;/*container width is 400 but box with total is 200*5 = 1000 so they should come out of box but they shrink */
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid;
+            background-color: lightslategrey;
+
+            display: flex;  
+            flex-wrap: wrap;
+
+        }
+        #box1{background-color: lightsalmon;order: 3;}
+        #box2{background-color: rgb(48, 131, 142);order: 1;}
+        #box3{background-color: rgb(193, 81, 159); order: 2;}
+        #box4{background-color: rgb(234, 77, 15);order: 4;}
+        #box5{background-color: rgb(35, 169, 30);order: 6;}
+        #box6{
+            background-color: gold;
+            flex-shrink: 2;
+            flex-grow: 2;
+            order: 5;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1 id="heading">flex container</h1>            
+    <div id="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+        <div id="box5" class="box">box5</div>
+        <div id="box6" class="box">box6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rotate{
+            height: 50px;
+            width: 50px;
+            border: 2px solid green;
+            background-color: chocolate;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            text-align: center;
+
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+        }
+        .rotate:hover{
+            /*rotate*/
+            transform: rotate(720deg);
+            background-color: aquamarine;
+            border: 3px red;
+            border-radius: 50%;
+            height: 60px;
+            width: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate">rotate</div>
+</body>
+</html>

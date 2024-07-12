@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box{
+            background-color: coral;
+            height: 100px;
+            width:100px;
+            margin: 5px;
+
+            display: block;/* itis default. due to this box take complete 1line and start next box from 2nd line*/
+            display: inline;/* height & width cannot be set and same line*/
+            display: inline-block; /* same line but now height & width can change*/
+             /*display: none;*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+</body>
+</html>
